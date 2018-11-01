@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo in Angular.js</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500' rel='stylesheet'
+          type='text/css'>
+    <script src="https://use.fontawesome.com/21be5f2318.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="todo.js"></script>
+</head>
+<body ng-app="angularTodo" ng-controller="angularTodoC">
+<h1 class="header-style">TO DO LIST FOR 2018</h1> <!-- title is given -->
+<div class="textbox"> <!-- text box is created -->
+    <input type="text" ng-model="todoitem" placeholder="Enter list here">
+    <button ng-click="submitNewItem()" type="button">Add</button>  <! the add button function is called -->
+</div>
+<div class="textbox" ng-repeat="x in items">
+    <label class="items">{{x}}</label>
+    <button ng-click="completeItem($index, $event)" type="button">Complete</button> <! the complete button function is called -->
+    <button ng-click="deleteItem($index)" type="button">Delete</button> <!-- the delete button function is called -->
+</div>
+</body>
+</html>

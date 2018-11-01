@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESTAURANTS NEAR YOU</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-app="restaurantsApp" ng-controller="restaurantCtrl">
+<h1 align="center"> RESTAURANTS NEAR YOU </h1>
+
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="input-group name-style">
+                    <input type="text" ng-model="location" class="form-control" placeholder="Enter your location"> <!-- giving textbox for location -->
+                    <input type="text" ng-model="query" class="form-control" placeholder="Enter your Query"> <!-- giving textbox for query -->
+                    <div class="input-group-btn">
+                        <button ng-click="searchRestaurant()" class="btn btn-default" type="submit"> <!-- search button -->
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div ng-repeat="x in results"> <!-- result display -->
+        <label>{{x.name}}</label>
+        <br>
+        <label ng-repeat="y in x.location.formattedAddress">{{y}}</label> <!-- result of address -->
+
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="restaurant.js"> </script>
+
+</body>
+</html>

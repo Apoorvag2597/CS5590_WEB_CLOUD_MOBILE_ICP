@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Angular js Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login, .input
+        {
+            max-width: 800px;
+            color: #555;
+            font-size: 18px;
+            margin: auto;
+            padding: 10px;
+
+        }
+    </style>
+    <head>
+        <h1 align="center"> CALCULATOR </h1> <!-- title is given here -->
+<body>
+<div ng-app="calculator" ng-controller="calcController"> <!-- ng directive -->
+    <div class="login"></div><br/>
+    <div class="input">
+        Enter  first operand :<input ng-model="a"></input> <!-- ng model is used to bind html and application data -->
+        <br/><br/>
+        enter second operand :<input ng-model="b"></input>
+        <br/><br/>
+        <p><select ng-model="operator"> <!-- drop down is used for selection of operators -->
+            <option>+</option>
+            <option>*</option>
+            <option>-</option>
+            <option>/</option>
+            <option>%</option>
+        </select></p>
+        <input type="submit" ng-click="calculate()" value="="></input> <!-- calculate function is used for performing the operation -->
+        <br/><br/>
+
+        result: {{ y }} <! the result is stored in y -->
+    </div>
+</
+<div>
+</div>
+</body>
+<script src="calculator.js"></script>
+</html>
+

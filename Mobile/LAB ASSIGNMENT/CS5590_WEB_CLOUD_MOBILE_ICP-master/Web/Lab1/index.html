@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="text-center hidden-xs hidden-sm"><h1> ABs SHOPPING </h1></div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ABs</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories <span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                        <li><a href="#">Electronics</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Today's Deal</a></li>
+                <li><a href="#">SALE!!!</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="input-group col-sm-12">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="pages/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="pages/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/slider-1.jpg" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="images/slider-2.jpg" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="images/slider-3.jpg" alt="" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="panel panel-primary margintop-5px">
+        <div class="panel-heading">Recently Viewed</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="#" target="_blank">
+                            <img src="images/image1.jpg" alt="" style="width:100% ; height:200px">
+                            <div class="caption text-center">
+                                <p>WOMEN PINK SHOES </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="#" target="_blank">
+                            <img src="images/image2.jpg" alt="" style="width:100%;height:200px">
+                            <div class="caption text-center">
+                                <p>WOMEN WHITE DRESS</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <a href="#" target="_blank">
+                            <img src="images/image3.png" alt="" style="width:100%;height:200px">
+                            <div class="caption text-center">
+                                <p>IPHONE</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-default marginbottom-0px">
+    <div class="container">
+        <div class="text-center padding-10px">
+            <a href="#"><i class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="#"><i class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="container">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
